@@ -29,10 +29,6 @@ body {
    padding: 40px 0;
 }
 
-.main {
-   @include flex(center, stretch, 90px, column);
-}
-
 .hamburger {
    display: none;
 }
@@ -79,9 +75,14 @@ body {
    height: auto;
 }
 
+.blog {
+   margin-bottom: 90px;
+}
+
 .first-screen {
    background: url("../assets/img/home.png") center center/contain no-repeat;
    background-size: 100% 100%;
+   margin-bottom: 90px;
    &__title {
       max-width: 770px;
       padding-top: 100px;
@@ -95,15 +96,11 @@ body {
    }
 }
 
-.content {
-   @include flex(justify-content, center, 90px, column);
-}
-
 .article {
    &:first-of-type {
       margin-bottom: 50px;
    }
-   @include flex(justify-content, center, 30px);
+   @include flex(space-between, center, 30px);
    &__img {
       width: 50%;
       img {
