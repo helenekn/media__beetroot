@@ -204,4 +204,26 @@ body {
    .menu {
       display: none;
    }
+   .article {
+      flex-wrap: wrap;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .container {
+      max-width: 300px;
+   }
+   .menu {
+      display: none;
+   }
+   .article {
+      width: 100%;
+      justify-content: center;
+      &__img {
+         width: 100%;
+      }
+      &__descr {
+         width: 100%;
+      }
+   }
 }

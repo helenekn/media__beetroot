@@ -500,4 +500,28 @@ body {
   .menu {
     display: none;
   }
+  .article {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 300px;
+  }
+  .menu {
+    display: none;
+  }
+  .article {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .article__img {
+    width: 100%;
+  }
+  .article__descr {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.min.css.map */
