@@ -29,6 +29,10 @@ body {
    padding: 40px 0;
 }
 
+.main {
+   @include flex(center, stretch, 90px, column);
+}
+
 .hamburger {
    display: none;
 }
@@ -40,25 +44,25 @@ body {
 }
 
 .info {
+   gap: 100px;
    &__nav {
       gap: 84px;
    }
 }
 
 .menu {
-   max-width: 500px;
-   // gap: 42px;
+   gap: 42px;
    &__item {
+      display: block;
       position: relative;
    }
    &__item:active::after {
       content: "";
       position: absolute;
-      width: 40px;
+      width: 60%;
       border: 1px solid #000000;
-      left: 50%;
-      bottom: -5px;
-      transform: translateX(-100%);
+      left: 15%;
+      bottom: -27%;
    }
    &__link {
       font-size: 14px;
@@ -66,12 +70,17 @@ body {
       letter-spacing: 0.3em;
       text-transform: uppercase;
       color: #000000;
-      padding-right: 42px;
    }
 }
 
+.nav__search img {
+   // display: block;
+   width: 100%;
+   height: auto;
+}
+
 .first-screen {
-   background: url("../assets/img/bcg.png") center center/contain no-repeat;
+   background: url("../assets/img/home.png") center center/contain no-repeat;
    background-size: 100% 100%;
    &__title {
       max-width: 770px;
@@ -88,4 +97,111 @@ body {
 
 .content {
    @include flex(justify-content, center, 90px, column);
+}
+
+.article {
+   &:first-of-type {
+      margin-bottom: 50px;
+   }
+   @include flex(justify-content, center, 30px);
+   &__img {
+      width: 50%;
+      img {
+         width: 100%;
+         display: block;
+      }
+   }
+}
+
+.blog__title {
+   font-family: "Red Hat Display";
+   font-size: 48px;
+   line-height: 1.3;
+   letter-spacing: 0.05em;
+   color: $color_main;
+   margin-bottom: 50px;
+   max-width: 369px;
+}
+
+.descr {
+   width: 50%;
+   &__suptitle,
+   &__data {
+      line-height: 166%;
+      letter-spacing: 0.1em;
+      color: #7b7b7b;
+      margin-bottom: 30px;
+   }
+   &__title {
+      font-family: "Red Hat Display";
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 166%;
+      letter-spacing: 0.1em;
+      margin-bottom: 15px;
+      max-width: 369px;
+   }
+   &__data {
+      margin-bottom: 50px;
+   }
+   &__text {
+      max-width: 448px;
+      line-height: 166%;
+      letter-spacing: 0.05em;
+      color: #565656;
+   }
+}
+
+//-------media--------////
+
+@media screen and (max-width: 992px) {
+   .container {
+      max-width: 700px;
+   }
+   .info {
+      gap: 50px;
+      &__nav {
+         gap: 30px;
+      }
+   }
+
+   .menu {
+      gap: 25px;
+      &__link {
+         font-size: 12px;
+         line-height: 1.2;
+         letter-spacing: 0.2em;
+      }
+   }
+   .first-screen__title {
+      max-width: 400px;
+      font-size: 30px;
+   }
+   .descr {
+      &__suptitle {
+         margin-bottom: 20px;
+      }
+      &__title {
+         margin-bottom: 5px;
+         line-height: 1.3;
+         font-size: 23px;
+         max-width: 315px;
+      }
+      &__data {
+         margin-bottom: 20px;
+      }
+      &__text {
+         max-width: 350px;
+         font-size: 14px;
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .container {
+      max-width: 700px;
+   }
+   .menu {
+      display: none;
+   }
 }
