@@ -443,7 +443,7 @@ body {
 .burger {
   display: block;
   position: absolute;
-  right: 34px;
+  right: 3vw;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);

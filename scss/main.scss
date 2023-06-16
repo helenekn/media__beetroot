@@ -78,8 +78,6 @@ body {
       z-index: 2;
       background: #f59b6a;
       display: none;
-      // visibility: hidden;
-      // opacity: 0;
       padding: 0 0;
       -moz-column-gap: 0;
       gap: 0;
@@ -115,7 +113,7 @@ body {
 .burger {
    display: block;
    position: absolute;
-   right: 34px;
+   right: 3vw;
    top: 50%;
    transform: translateY(-50%);
    width: 34px;
