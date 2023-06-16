@@ -1,0 +1,45 @@
+@media screen and (max-width: 992px) {
+  .info {
+    gap: 50px;
+  }
+  .info__nav {
+    gap: 84px;
+  }
+  .info__nav {
+    gap: 20px;
+  }
+  .menu {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    gap: 70px;
+  }
+  .menu {
+    display: none;
+  }
+  .first-screen__title {
+    max-width: 400px;
+    font-size: 36px;
+  }
+  .descr__suptitle {
+    margin-bottom: 20px;
+  }
+  .descr__title {
+    margin-bottom: 15px;
+    line-height: 1.3;
+    font-size: 22px;
+    max-width: 315px;
+  }
+  .descr__data {
+    margin-bottom: 40px;
+  }
+  .descr__text {
+    max-width: 350px;
+  }
+  .article {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=media.min.css.map */

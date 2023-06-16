@@ -6,3 +6,6 @@ $container_width: 1170px;
 $background_main: #ffffff;
 $color_main: #000000;
 $color_add: #565656;
+
+$width_content: 1170px;
+$adaptive_width_content: calc($width_content / 2);
