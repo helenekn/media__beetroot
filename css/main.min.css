@@ -460,7 +460,7 @@ body {
   .burger-label span {
     display: block;
     width: 100%;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     margin-bottom: 10px;
   }
 }
