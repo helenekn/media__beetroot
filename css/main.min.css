@@ -416,6 +416,9 @@ body {
             box-shadow: 1px 5px 11px 4px #bf612e;
   }
 }
+.menu__item {
+  position: relative;
+}
 @media screen and (max-width: 820px) {
   .menu__item {
     width: 100%;
